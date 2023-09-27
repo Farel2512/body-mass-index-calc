@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <img src="https://health.clevelandclinic.org/wp-content/uploads/sites/3/2022/01/MeasuringBMI-1293501993-770x533-1.jpg" alt="Background Image" class="background-image" />
+      <h1>BMI CALCULATOR</h1>
+      <h2>Masukkan Berat Badan & Tinggi Badan Anda.</h2>
+      <label for="weight">Body Weight (kg) :</label>
+      <input type="number" id="weight" placeholder="Berat" required /><br /><br />
+      <label for="height">Body Height (cm) :</label>
+      <input type="number" id="height" placeholder="Tinggi" required /><br /><br />
+      <button class="reset" onclick="resetInputs()">Reset</button>
+      <button class="calculate" onclick="calculateBMI()">Hitung BMI</button><br /><br />
+      <div class="container-result" id="result">
+        Body Mass Index: <span class="bmi-value">0.00</span><br />
+        BMI Category: -
+      </div>
+    </div>
+    <footer>
+      <p><b>Muhammad Haikal Syahfarel</b></p>
+      <p>
+        <a href="https://www.skilvul.com"><img src="https://skilvul.com/static/skilvul.svg" /></a>
+      </p>
+      <p><b>&copy; 2023 BMI Calculator</b></p>
+    </footer>
+  </body>
+</html>
