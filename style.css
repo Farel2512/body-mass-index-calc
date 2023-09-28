@@ -128,8 +128,17 @@ p a img:hover {
 }
 
 @media screen and (max-width: 768px) {
+  body {
+    /* font-family: Arial, sans-serif; */
+    text-align: center;
+    color: #fff;
+    padding: 180px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
   .container {
-    padding: 10px;
+    padding: 50px;
   }
 
   h1 {
@@ -158,5 +167,9 @@ p a img:hover {
 
   .background-image {
     display: none;
+  }
+
+  footer {
+    padding: 50px 0 0 65px;
   }
 }
