@@ -1,15 +1,11 @@
 function calculateBMI() {
-  // Ambil nilai berat badan dan tinggi badan dari input
   var weight = parseFloat(document.getElementById('weight').value);
   var height = parseFloat(document.getElementById('height').value);
 
-  // Konversi tinggi badan ke dalam meter
   var heightInMeter = height / 100;
 
-  // Hitung BMI
   var bmi = weight / (heightInMeter * heightInMeter);
 
-  // Tentukan kategori BMI
   var bmiCategory = '';
   if (bmi < 18.5) {
     bmiCategory = 'Underweight';
@@ -17,8 +13,10 @@ function calculateBMI() {
     bmiCategory = 'Normal weight';
   } else if (bmi >= 25 && bmi <= 29.9) {
     bmiCategory = 'Overweight';
-  } else {
+  } else if (bmi >= 30) {
     bmiCategory = 'Obesity';
+  } else {
+    bmiCategory = '-';
   }
 
   // Tampilkan hasil
